@@ -1,0 +1,71 @@
+@media (min-width: 375px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero-page {
+    height: 700px;
+    &__title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      text-align: center;
+      padding-top: 147px;
+    }
+    &__text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    &__btn {
+      width: 285px;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 131px;
+      margin: auto;
+    }
+    &::after {
+      content: url(./img/stars_mobile.svg);
+      position: absolute;
+      bottom: 79px;
+      right: 34px;
+    }
+    &::before {
+      content: url(./img/big-star_mobile.svg);
+      position: absolute;
+      top: -110px;
+      bottom: 248px;
+      left: 37px;
+    }
+  }
+  .about {
+    display: none;
+  }
+  .mini-games {
+    &-box{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .right-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-card {
+    &__btn {
+      padding: 16px calc(50% - 30px); 
+    }
+  }
+  .footer {
+    height: 100px;
+    margin-top: 16px;
+    &__text {
+        padding-top: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+  }
+}

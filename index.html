@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Мини-игры</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="hero-page center">
+        <h1 class="hero-page__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
+        <p class="hero-page__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b>  и <b>приступай</b>. </p> 
+        <a href="#about" class="hero-page__btn" >Поехали!</a>
+    </section>
+    <section class="about center">
+        <h2 class="about__title" id="about">Об играх</h2>
+        <p class="about__text"> В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них может поиграть каждый. <br> Все игры доступны для пользования.</p>
+         <div class="play-box">
+            <a class="card" href="#GuessTheNumber">
+                <article class="play">
+                    <img src="./img/game1.jpg" alt="Угадай число" class="play__img">
+                    <span class="play__text">Игра №1</span>
+                    <h2 class="play__name">Угадай число</h2>
+                </article>
+            </a>
+            <a class="card" href="#SimpleArithmetic">
+                <article class="play">
+                    <img src="./img/game2.jpg" alt="Простая арифметика" class="play__img">
+                    <span class="play__text">Игра №2</span>
+                    <h2 class="play__name">Простая арифметика</h2>
+                </article>
+            </a>
+            <a class="card" href="#FlipTheText">
+                <article class="play">
+                    <img src="./img/game3.jpg" alt="Переверни текст" class="play__img">
+                    <span class="play__text">Игра №3</span>
+                    <h2 class="play__name">Переверни текст</h2>
+                </article></a>
+            <a class="card" href="#RockPaperScissors">
+                <article class="play">
+                    <img src="./img/game4.jpg" alt="Камень, ножницы, бумага" class="play__img">
+                    <span class="play__text">Игра №4</span>
+                    <h2 class="play__name">Камень, <br> ножницы, <br> бумага</h2>
+                </article>
+            </a>
+            <a class="card" href="#Quiz">
+                <article class="play">
+                    <img src="./img/game5.jpg" alt="Простая викторина" class="play__img">
+                    <span class="play__text">Игра №5</span>
+                    <h2 class="play__name">Простая <br> викторина</h2>
+                </article>
+            </a>
+            <a class="card" href="#RandomColorGenerator">
+                <article class="play">
+                    <img src="./img/game6.jpg" alt="Генератор случайных цветов" class="play__img">
+                    <span class="play__text">Игра №6</span>
+                    <h2 class="play__name">Генератор <br> случайных <br> цветов</h2>
+                </article>
+            </a>
+        </div>
+    </section>
+    <!-- Мини-игры -->
+    <section class="mini-games center">
+        <h2 class="mini-games__title">Мини-игры</h2>
+        <div class="mini-games-box mini-games-box_tablet">
+            <article id="GuessTheNumber" class="big-card">
+                <div class="right-column">
+                    <h2 class="big-card__title">Угадай число</h2>
+                    <p class="big-card__text">Попробуй угадать случайное <br> число от 1 до 100.</p>
+                    <a class="big-card__btn" onclick="playRandom()" >Играть!</a>
+                </div>
+                <img src="./img/game1.jpg" alt="Угадай число" class="big-card__img">
+            </article>
+            <article id="SimpleArithmetic" class="big-card">
+                <div class="right-column">
+                    <h2 class="big-card__title">Простая арифметика</h2>
+                    <p class="big-card__text">Попробуй решить простые арифметические задачи.</p>
+                    <a class="big-card__btn" onclick="playMath()">Играть!</a>
+                </div> 
+                <img src="./img/game2.jpg" alt="Простая арифметика" class="big-card__img">
+            </article>
+            <article id="FlipTheText" class="big-card">
+                <div class="right-column">
+                    <h2 class="big-card__title">Переверни текст</h2>
+                    <p class="big-card__text">Попробуй ввести текст, который <br> будет перевернут.</p>
+                    <a class="big-card__btn" onclick="playReverse()">Играть!</a>
+                </div>
+                <img src="./img/game3.jpg" alt="Переверни текст" class="big-card__img">
+            </article>
+            <article id="Quiz" class="big-card">
+                <div class="right-column">
+                    <h2 class="big-card__title">Викторина</h2>
+                    <p class="big-card__text">Отвечай на вопросы викторины <br> с вариантами ответов.</p>
+                    <a class="big-card__btn" onclick="playQuiz()">Играть!</a>
+                </div>
+                <img src="./img/game5.jpg" alt="Викторина" class="big-card__img">
+            </article>
+            <article id="RandomColorGenerator" class="big-card">
+                <div class="right-column">
+                    <h2 class="big-card__title">Генератор случайных <br> цветов</h2>
+                    <p class="big-card__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <a class="big-card__btn" onclick="RandomColorGenerator()">Играть!</a>
+                </div>
+                <img src="./img/game4.jpg" alt="Генератор случайных  цветов" class="big-card__img">
+            </article>
+            <article id="RockPaperScissors" class="big-card">
+                <div class="right-column">
+                    <h2 class="big-card__title">Камень, <br> ножницы, <br>бумага</h2>
+                    <p class="big-card__text">Сыграй в популярную игру <br> против компьютера.</p>
+                    <a class="big-card__btn" onclick="RockPaperScissors()">Играть!</a>
+                </div>
+                <img src="./img/game6.jpg" alt="Камень, ножницы, бумага" class="big-card__img">
+            </article>
+
+        </div>
+        
+    </section>
+   <footer class="footer">
+    <p class="footer__text">Все права защищены.</p>
+   </footer>
+   <script src="./script.js"></script>
+</body>
+</html>
