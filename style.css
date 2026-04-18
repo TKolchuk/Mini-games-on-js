@@ -400,4 +400,51 @@ a {
     font-weight: 600;
     line-height: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.scrolling-strip {
+  width: 100%;
+  background-color: #BCEC30;; /* Цвет с вашего макета */
+  color: #1A1A1A;
+  padding: 15px 0;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.scrolling-strip {
+  display: flex; 
+}
+
+.scrolling-content {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: scroll-left 15s linear infinite;
+}
+
+.scrolling-content li {
+  margin-right: 40px; 
+  display: flex;
+  align-items: center;
+}
+
+
+.scrolling-content li::after {
+  content: '✦';
+  margin-left: 40px;
+  font-size: 33px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
