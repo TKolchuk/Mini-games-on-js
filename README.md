@@ -1,6 +1,6 @@
 # 🎮 Mini-Games Hub
 
-[🔗 Живое демо проекта](https://tkolchuk.github.io/Mini-games-on-js/)
+[🔗 Живое демо проекта](https://tkolchuk.github.io/Mini-games-on-js/](https://tkolchuk.github.io/Mini-games-on-js/)
 
 [🔗 Макет в Figma](https://www.figma.com/design/zptVYnzwGwyNU5fhGw8Lu5/Сайт-с-мини-играми?node-id=18933-3&p=f&t=gyqpLGAmCF1sphDP-0)
 
