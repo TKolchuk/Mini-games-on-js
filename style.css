@@ -404,6 +404,7 @@ a {
 
 .scrolling-strip {
   width: 100%;
+  overflow:hidden;
   background-color: #BCEC30;; /* Цвет с вашего макета */
   color: #1A1A1A;
   padding: 15px 0;
