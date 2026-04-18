@@ -1,18 +1,9 @@
 # 🎮 Mini-Games Hub
 
-> 🚀 [🔗 Живое демо проекта](ссылка_на_демо)
+[🔗 Живое демо проекта](https://tkolchuk.github.io/Mini-games-on-js/)
 
-Коллекция из шести интерактивных мини-игр в одном браузере. Никакой регистрации, скачивания и сложных настроек — просто откройте и играйте!
+[🔗 Макет в Figma](https://www.figma.com/design/zptVYnzwGwyNU5fhGw8Lu5/Сайт-с-мини-играми?node-id=18933-3&p=f&t=gyqpLGAmCF1sphDP-0)
 
-<div align="center">
-  <img src="./img/preview.png" alt="Превью проекта" width="600">
-  <br><br>
-  <a href="#-о-проекте">О проекте</a> •
-  <a href="#-функции">Функции</a> •
-  <a href="#-технологии">Технологии</a> •
-  <a href="#-запуск">Запуск</a> •
-  <a href="#-контакты">Контакты</a>
-</div>
 
 ---
 
@@ -48,3 +39,6 @@
 
 ## 🛠️ Технологии
 JavaScript,HTML, CSS (SASS), БЭМ, Git.
+
+---
+
